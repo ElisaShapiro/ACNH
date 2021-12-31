@@ -7,44 +7,23 @@ import ArtContainer from './components/ArtContainer'
 import BugsContainer from './components/BugsContainer'
 import FishContainer from './components/FishContainer'
 import FossilsContainer from './components/FossilsContainer'
-import SeaCreaturesContainer from './components/SeaCreaturesContainer'
 import SongsContainer from './components/SongsContainer'
+import SeaCreaturesContainer from './components/SeaCreaturesContainer'
 import VillagersContainer from './components/VillagersContainer'
 
 function App() {
   
-  // useEffect(() => {
-  //   fetch("http://acnhapi.com/v1/fish/")
-  //   .then(response => response.json())
-  //   .then(data => console.log(data))
-  // })
   
   return (
       <Routes>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/art">
-          <ArtContainer />
-        </Route>
-        <Route path="/bugs">
-          <BugsContainer />
-        </Route>
-        <Route path="/fish">
-          <FishContainer />
-        </Route>
-        <Route path="/fossils">
-          <FossilsContainer />
-        </Route>
-        <Route path="/seacreatures">
-          <SeaCreaturesContainer />
-        </Route>
-        <Route path="/songs">
-          <SongsContainer />
-        </Route>
-        <Route path="/villagers">
-          <VillagersContainer />
-        </Route>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/art" element={<ArtContainer />} />
+        <Route path="/bugs" element={<BugsContainer />} />
+        <Route path="/fish" element={<FishContainer />} />
+        <Route path="/fossils" element={<FossilsContainer />} />
+        <Route path="/seacreatures" element={<SeaCreaturesContainer />} />
+        <Route path="/songs" element={<SongsContainer />} />
+        <Route path="/villagers" element={<VillagersContainer />} />
       </Routes>
   );
 }
