@@ -1,16 +1,23 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
+import FossilCard from './FossilCard'
 
 function FossilsContainer(){
+    const [fossils, setFossils] = useState([])
 
     useEffect(() => {
         fetch("http://acnhapi.com/v1/fossils/")
         .then(response => response.json())
-        .then(data => console.log(data))
+        .then(data => setFossils(data))
       })
      
     return (
-        <div>
-            fossils
+        <div className="card-container">
+            {Object.keys(fossils).map((oneFossil) => {
+                const thisFossil = fossils[oneFossil]
+                return (
+                    <FossilCard key={thisFossil.id} fossils={thisFossil} />
+                )      
+            })}
         </div>
     )
 

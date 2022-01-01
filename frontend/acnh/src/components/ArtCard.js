@@ -4,7 +4,7 @@ function ArtCard({ art }) {
     return (
         <div className="card-display">
             {art.id}
-            <img src={art.image_uri} />
+            <img src={art.image_uri} className="card-img"/>
             <p>{art.name['name-USen']}</p>
             <p>{art['museum-desc']}</p>
             
