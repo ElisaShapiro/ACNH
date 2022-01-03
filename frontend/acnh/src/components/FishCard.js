@@ -4,7 +4,7 @@ function FishCard({ fish }) {
     return (
         <div className="card-display">
             {fish.id}
-            <img src={fish.image_uri} className="card-img"/>
+            <img src={fish.image_uri} alt="fish" className="card-img"/>
             <p>{fish.name['name-USen']}</p>
             <p>{fish['museum-phrase']}</p>
             <p>{fish.availability.location}</p>

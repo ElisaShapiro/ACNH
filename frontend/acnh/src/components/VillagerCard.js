@@ -4,7 +4,7 @@ function VillagerCard({ villager }) {
     return (
         <div className="card-display">
             {villager.id}
-            <img src={villager.image_uri} className="card-img"/>
+            <img src={villager.image_uri} alt="villager" className="card-img"/>
             <p>{villager.name['name-USen']}</p>
             <p>{villager.birthday}</p>
             <p>{villager.gender}</p>

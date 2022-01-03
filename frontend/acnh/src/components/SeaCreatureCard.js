@@ -4,7 +4,7 @@ function SeaCreatureCard({ seaCreatures }) {
     return (
         <div className="card-display">
             {seaCreatures.id}
-            <img src={seaCreatures.image_uri} className="card-img"/>
+            <img src={seaCreatures.image_uri} alt="sea creature" className="card-img"/>
             <p>{seaCreatures.name['name-USen']}</p>
             <p>{seaCreatures['museum-phrase']}</p>
             <p>{seaCreatures.shadow}</p>

@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import { useEffect } from 'react'
 
 import Home from './components/Home'
+import NavBar from './components/NavBar'
 import ArtContainer from './components/ArtContainer'
 import BugsContainer from './components/BugsContainer'
 import FishContainer from './components/FishContainer'
@@ -15,6 +16,8 @@ function App() {
   
   
   return (
+    <>
+      <NavBar />
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/art" element={<ArtContainer />} />
@@ -25,6 +28,7 @@ function App() {
         <Route path="/songs" element={<SongsContainer />} />
         <Route path="/villagers" element={<VillagersContainer />} />
       </Routes>
+    </>
   );
 }
 
