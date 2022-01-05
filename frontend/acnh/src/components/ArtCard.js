@@ -1,6 +1,7 @@
 function ArtCard({ art }) {
     console.log(art, "artcard")
     //to do: make painting name capitalized, collected/donated checkbox 
+    
     return (
         <div className="card-display">
             {art.id}

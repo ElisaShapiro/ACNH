@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
 import VillagerCard from './VillagerCard'
 
-//search backend to get name so not render 391, organize search/filter gender personality species
+//search backend to get name so not render 391, organize search/filter personality species
+//search set up: by name, filter by personality/species, and add current villager checkbox
 function VillagersContainer(){
     const [villagers, setVillagers] = useState([])
     useEffect(() => {

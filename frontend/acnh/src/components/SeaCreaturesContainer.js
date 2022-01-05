@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import SeaCreatureCard from './SeaCreatureCard'
-
+//search set up: by name, filter by current time/current month, and add donated checkbox
 function SeaCreaturesContainer(){
     const [seaCreatures, setSeaCreatures] = useState([])
     const [northern, setNorthern] = useState(true)

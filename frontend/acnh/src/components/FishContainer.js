@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import FishCard from './FishCard'
-
+//search: by name, filter by current time/current month, and add donated checkbox
 function FishContainer(){
     const [fish, setFish] = useState([])
     const [northern, setNorthern] = useState(true)

@@ -16,6 +16,7 @@ function FishCard({ fish, northern }) {
             <p>{fish.name['name-USen']}</p>
             <p>{fish['museum-phrase']}</p>
             <p>Location: {fish.availability.location}</p>
+            <p>Price: {fish.price} bells</p>
             <p>Time: {timeDisplay}</p>
             <p>Months: {monthDisplay}</p>
             <p>caught/donated checkbox</p>

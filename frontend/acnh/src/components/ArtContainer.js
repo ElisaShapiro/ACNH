@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import ArtCard from './ArtCard'
-
+//search: by name and add donated checkbox
 
 function ArtContainer(){
     const [art, setArt] = useState([])

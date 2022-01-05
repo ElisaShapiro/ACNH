@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import SongCard from './SongCard'
-
+//search set up: by name and add collected checkbox
 function SongsContainer(){
     const [songs, setSongs] = useState([])
 

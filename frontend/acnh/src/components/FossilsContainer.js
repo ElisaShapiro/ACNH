@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import FossilCard from './FossilCard'
-
+//search by name and add donated checkbox
 function FossilsContainer(){
     const [fossils, setFossils] = useState([])
 
