@@ -18,11 +18,11 @@ function NavBar() {
             <NavLink  to="/fossils">
                 Fossils
             </NavLink>
-            <NavLink  to="/songs">
-                Songs
-            </NavLink>
             <NavLink  to="/seacreatures">
                 Sea Creatures
+            </NavLink>
+            <NavLink  to="/songs">
+                Songs
             </NavLink>
             <NavLink  to="/villagers">
                 Villagers

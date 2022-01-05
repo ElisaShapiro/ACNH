@@ -8,7 +8,7 @@ function VillagersContainer(){
         fetch("http://acnhapi.com/v1/villagers/")
         .then(response => response.json())
         .then(data => setVillagers(data))
-      })
+    }, [])
      
     return (
         <div className="card-container">

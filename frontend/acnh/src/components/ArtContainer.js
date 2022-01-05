@@ -12,13 +12,16 @@ function ArtContainer(){
     }, [])
     
     return (
-        <div className="card-container">
-            {Object.keys(art).map((oneArt) => {
-                const thisArt = art[oneArt]
-                return (
-                    <ArtCard key={thisArt.id} art={thisArt} />
-                )      
-            })}
+        <div>
+            <div>All paintings cost 4980 bells and sell for 1245 bells</div>
+            <div className="card-container">
+                {Object.keys(art).map((oneArt) => {
+                    const thisArt = art[oneArt]
+                    return (
+                        <ArtCard key={thisArt.id} art={thisArt} />
+                    )      
+                })}
+            </div>
         </div>
     )
 

@@ -10,11 +10,6 @@ function BugsContainer(){
         .then(response => response.json())
         .then(data => setBugs(data))
     }, [])
-     
-    // function monthToWord(number){
-    //     if (1) return Jan
-    // }
-    
 
     return (
         <div>

@@ -4,9 +4,8 @@ function BugCard({ bug, northern }) {
     console.log(bug, "BugCard")
 
     const timeDisplay = bug.availability.isAllDay ? "All Day" : bug.availability.time
-    const monthDisplay = bug.availability.isAllYear ? "All Year" : 
-        (northern ? 
-            bug.availability['month-array-northern'].map(month=>convertMonthToWord(month)).join(",")
+    const monthDisplay = bug.availability.isAllYear ? "All Year" : (northern ? 
+            bug.availability['month-array-northern'].map(month=>convertMonthToWord(month)).join(", ")
             : bug.availability['month-array-southern'].map(month=>convertMonthToWord(month)).join(", ")
         )
 
@@ -17,7 +16,7 @@ function BugCard({ bug, northern }) {
             <p>{bug.name['name-USen']}</p>
             <p>{bug['museum-phrase']}</p>
             <p>Location: {bug.availability.location}</p>
-            <p>Price: {bug.price}</p>
+            <p>Price: {bug.price} bells</p>
             <p>Time: {timeDisplay}</p>
             <p>Months: {monthDisplay}</p>
             <p>caught/donated checkbox</p>

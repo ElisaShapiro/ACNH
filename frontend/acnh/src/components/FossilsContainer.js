@@ -8,7 +8,7 @@ function FossilsContainer(){
         fetch("http://acnhapi.com/v1/fossils/")
         .then(response => response.json())
         .then(data => setFossils(data))
-      })
+    }, [])
      
     return (
         <div className="card-container">
