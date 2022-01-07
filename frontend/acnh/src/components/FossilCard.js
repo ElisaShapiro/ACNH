@@ -9,7 +9,8 @@ function FossilCard({ fossils }) {
             <p>{fossils['museum-phrase']}</p>
             <p>Price: {fossils.price} bells</p>
             <p>Part of: {fossils['part-of']} set</p>
-            <p>collected/donated checkbox</p>
+            <label>Donated?</label>
+            <input type="checkbox"/>
             
         </div>
     )

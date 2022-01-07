@@ -15,6 +15,7 @@ function BugsContainer(){
     // const searchedBugs = bugs.filter((bug) => 
     //     bug.name.toLowerCase().includes(input.toLowerCase())
     // )
+    // console.log(searchedBugs)
 
     return (
         <div>

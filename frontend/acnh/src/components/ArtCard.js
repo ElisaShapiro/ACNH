@@ -9,8 +9,10 @@ function ArtCard({ art }) {
             <p>{art.name['name-USen']}</p>
             <p>{art['museum-desc']}</p>
             <p>Has Fake? {art.hasFake ? "Yes" : "No"}</p>
-            <p>collected/donated checkbox</p>
-            
+            <label>Caught?</label>
+            <input type="checkbox"/>
+            <label>Donated?</label>
+            <input type="checkbox"/>
         </div>
     )
 }

@@ -19,7 +19,10 @@ function FishCard({ fish, northern }) {
             <p>Price: {fish.price} bells</p>
             <p>Time: {timeDisplay}</p>
             <p>Months: {monthDisplay}</p>
-            <p>caught/donated checkbox</p>
+            <label>Caught?</label>
+            <input type="checkbox"/>
+            <label>Donated?</label>
+            <input type="checkbox"/>
         </div>
     )
 }

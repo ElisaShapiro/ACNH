@@ -11,6 +11,8 @@ function VillagerCard({ villager }) {
             <p>Personality: {villager.personality}</p>
             <p>Species: {villager.species}</p>
             <p>birthday string or date</p>
+            <label>Current resident?</label>
+            <input type="checkbox"/>
         </div>
     )
 }
