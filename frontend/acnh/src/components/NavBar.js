@@ -27,6 +27,12 @@ function NavBar() {
             <NavLink  to="/villagers">
                 Villagers
             </NavLink>
+            <NavLink to="/login">
+                Login
+            </NavLink>
+            <NavLink to="/signup">
+                Sign Up
+            </NavLink>
         </>
     )
 }

@@ -4,6 +4,8 @@ import { useEffect } from 'react'
 
 import Home from './components/Home'
 import NavBar from './components/NavBar'
+import Login from './components/Login'
+import Signup from './components/Signup';
 import ArtContainer from './components/ArtContainer'
 import BugsContainer from './components/BugsContainer'
 import FishContainer from './components/FishContainer'
@@ -27,6 +29,8 @@ function App() {
         <Route path="/seacreatures" element={<SeaCreaturesContainer />} />
         <Route path="/songs" element={<SongsContainer />} />
         <Route path="/villagers" element={<VillagersContainer />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
     </>
   );
