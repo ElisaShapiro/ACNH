@@ -15,7 +15,17 @@ import SeaCreaturesContainer from './components/SeaCreaturesContainer'
 import VillagersContainer from './components/VillagersContainer'
 
 function App() {
-  
+
+  // // AUTOLOGIN
+  // useEffect(() => {
+  //   fetch('/me').then((r) => {
+  //     if (r.ok) {
+  //       r.json().then((user) => {
+  //         setUser(user)
+  //       });
+  //     }
+  //   });
+  // }, [hasUpdate]);
   
   return (
     <>
